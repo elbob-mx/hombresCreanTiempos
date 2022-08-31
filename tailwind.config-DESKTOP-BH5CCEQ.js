@@ -2,19 +2,19 @@
 module.exports = {
   content: ['./*.html'],
   theme: {
-    screens: {
-      small: '0px',
-      mobile: '359px',
+    screems: {
+      xs: '0px',
+      mobile: '360px',
       tablet: '768px',
       laptop: '976px',
       desktop: '1440px',
     },
     extend: {
       colors : {
+
       },
       fontFamily: {
-        'archivo': 'Archivo Narrow, sans-serif',
-        'lexend': 'Lexend Exa, sans-serif',        
+        'archivo': 'Archivo, sans-serif',
         },
       fontWeight: {
         hairline: 100,
