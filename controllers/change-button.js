@@ -27,10 +27,6 @@ function change() {
     btn.value = "dificiles";
   };
 
-  if (bgVideo.id == "bg-video") {
-    bgVideo.src = "./video/good times.mp4"
-  }
-
   console.log('función procesada');
   console.log("frase: " + " " + upQuotes[0]);
   console.log("frase: " + " " + downQuotes[0]);
