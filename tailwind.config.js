@@ -14,7 +14,8 @@ module.exports = {
       },
       fontFamily: {
         'archivo': 'Archivo Narrow, sans-serif',
-        'lexend': 'Lexend Exa, sans-serif',        
+        'lexend': 'Lexend Exa, sans-serif',
+        'bebas': 'Bebas Neue, cursive',
         },
       fontWeight: {
         hairline: 100,

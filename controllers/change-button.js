@@ -12,31 +12,28 @@ const downQuotes = [
   'tiempos difíciles',
 ];
 
+var btn = document.getElementById("btn");
+var result = document.getElementById("result");
+var bgVideo = document.getElementById("bg-video");
+
 function change() {
-  var btn = document.getElementById("btn");
-  var result = document.getElementById("result");
-  var bgVideo = document.getElementById("bg-video");
   
   btn.innerHTML = upQuotes[0];
+  result.innerHTML = downQuotes[0];
 
-  if (btn.innerHTML == upQuotes[0]) {
-    result.innerHTML = downQuotes[0];
-  };
+  if (btn.innerHTML == 'personas débiles', result.innerHTML == 'tiempos difíciles') {
+    } else if (btn.innerHTML == 'tiempos difíciles', result.innerHTML = 'personas fuertes') {
+      bgVideo.setAttribute('src', 'video/good times-shade.mp4');
+      }
 
   if (btn.value == "debiles") {
     btn.value = "dificiles";
   };
-
+  
   console.log('función procesada');
   console.log("frase: " + " " + upQuotes[0]);
   console.log("frase: " + " " + downQuotes[0]);
-  console.log(bgVideo.src);  
-}
-
-/*
-while (contador 'btn' < 3) {
-  contador 'btn' ++ ;
-  upQuotes[0++];
-  downQuotes[0++];
-}
-*/
+  console.log(bgVideo.src);
+  console.log(btn.value);  
+  console.log(result.value);
+};
