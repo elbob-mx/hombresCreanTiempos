@@ -559,6 +559,11 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -569,6 +574,10 @@ video {
 
 .z-0 {
   z-index: 0;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .z-40 {
@@ -583,6 +592,26 @@ video {
   margin-left: 1.25rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-60 {
+  margin-bottom: 15rem;
+}
+
+.-mb-40 {
+  margin-bottom: -10rem;
+}
+
+.mb-80 {
+  margin-bottom: 20rem;
+}
+
+.-mb-28 {
+  margin-bottom: -7rem;
+}
+
 .flex {
   display: flex;
 }
@@ -591,8 +620,20 @@ video {
   height: 100vh;
 }
 
+.h-full {
+  height: 100%;
+}
+
+.max-h-full {
+  max-height: 100%;
+}
+
 .min-h-full {
   min-height: 100%;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-screen {
@@ -628,6 +669,14 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -640,6 +689,10 @@ video {
   justify-content: center;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -649,25 +702,35 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-cover {
-  background-size: cover;
-}
-
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
+.p-52 {
+  padding: 13rem;
 }
 
 .text-left {
   text-align: left;
 }
 
+.font-bebas {
+  font-family: Bebas Neue, cursive;
+}
+
 .font-archivo {
   font-family: Archivo Narrow, sans-serif;
 }
 
-.font-bebas {
-  font-family: Bebas Neue, cursive;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-black {
@@ -690,25 +753,29 @@ video {
 }
 
 @media (min-width: 359px) {
+  .mobile\:justify-center {
+    justify-content: center;
+  }
+
+  .mobile\:justify-between {
+    justify-content: space-between;
+  }
+
+  .mobile\:justify-items-center {
+    justify-items: center;
+  }
+
+  .mobile\:align-middle {
+    vertical-align: middle;
+  }
+
   .mobile\:text-5xl {
     font-size: 3rem;
     line-height: 1;
   }
 }
 
-@media (min-width: 768px) {
-  .tablet\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
-  }
-}
-
 @media (min-width: 976px) {
-  .laptop\:text-9xl {
-    font-size: 8rem;
-    line-height: 1;
-  }
-
   .laptop\:text-8xl {
     font-size: 6rem;
     line-height: 1;
