@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./css/output.css" />
     <title>Tiempos</title>
   </head>
@@ -16,35 +17,28 @@
   <body class="overflow-hidden">
 
     <header class="relative flex items-center justify-start h-screen mb-12 overflow-hidden">
-
       <div class="z-10 flex flex-col ml-5 font-black text-black font-bebas laptop:text-8xl desktop:text-9xl mobile:text-5xl">
-
         <button id="btn" type="button" value="debiles" onclick="javascript:change(this)" class="relative z-30 text-left text-black">personas débiles</button>
-
         <div class="relative z-30 text-left text-red-500 animate-pulse">crean</div>
-
-        <div id="result" type="text" class="relative z-30 text-left text-black">tiempos difíciles</div>    
-
+        <div id="result" type="text" class="relative z-30 text-left text-black">tiempos difíciles</div>
       </div>
 
       <video
-        autoplay
-        loop
-        muted
-        id="bg-video"
-        class="absolute z-0 min-w-full min-h-full max-w-none scale-x-flip"
+        autoplay loop muted id="bg-video" class="absolute z-0 min-w-full min-h-full max-w-none scale-x-flip"
         src="./video/a2e0a130.mp4"
-        type="video/mp4"
-      >
-        Your browser does not support the video tag.
+        type="video/mp4"> * your browser does not support the video tag *
       </video>
       
     </header>
 
     <script src="./controllers/change-button.js"></script>
     
-    <footer class="fixed bottom-0 left-0 flex items-center justify-end w-full h-16 pl-5 text-xl text-white px-7 font-archivo">
-            <a class="pl-5 text-yellow-400" href="mailto:rob7th@gmail.com">contact me</a> <a class="pl-5" href="https://github.com/elbob-mx">github</a> <p class="pl-5">dev: rrgo 2022</p>
-        </footer>
+    <footer class="fixed bottom-0 left-0 flex items-center justify-end w-full h-16 pl-5 text-xl text-white jus px-7 font-archivo">
+      <span class="text-yellow-400 material-symbols-sharp">mail</span>
+      <a class="pl-2 text-yellow-400" href="mailto:rob7th@gmail.com">contact me</a>
+      <a class="pl-10" href="https://github.com/elbob-mx">github</a>
+      <p class="pl-5"><span class="text-zinc-300">dev: </span>rrgo 2022</p>
+    </footer>
+    
   </body>
 </html>
