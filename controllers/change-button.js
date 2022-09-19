@@ -49,11 +49,8 @@ function change() {
     } else if (btn.innerHTML == 'buenos tiempos', result.innerHTML == 'personas débiles') {
       btn.innerHTML = 'personas débiles';
       result.innerHTML = 'tiempos difíciles';
-      bgVideo.setAttribute('src', 'video/bucha.mp4');
-      document.getElementById("btn").classList.remove('text-white');
-      document.getElementById("btn").classList.add('text-black');
-      document.getElementById("result").classList.remove('text-white');
-      document.getElementById("result").classList.add('text-black');
+      bgVideo.setAttribute('src', 'video/Putin Laughing.mp4');
+      document.getElementById("bg-video").classList.add('scale-x-flip');
     }
 
     if (btn.value == "debiles") {
