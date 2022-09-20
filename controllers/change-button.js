@@ -1,20 +1,26 @@
+// VARIABLES ---------->
 let btn = document.getElementById("btn");
 let result = document.getElementById("result");
 let bgVideo = document.getElementById("bg-video");
 let crean = document.getElementById("crean");
 
+// FUNCTIONS ---------->
 function whiteToBlack () {
+
   document.getElementById("btn").classList.remove('text-white');
   document.getElementById("btn").classList.add('text-black');
   document.getElementById("result").classList.remove('text-white');
   document.getElementById("result").classList.add('text-black');
+
 };
 
 function blackToWhite () {
+
   document.getElementById("btn").classList.remove('text-black');
   document.getElementById("btn").classList.add('text-white');
   document.getElementById("result").classList.remove('text-black');
   document.getElementById("result").classList.add('text-white');
+
 }
 
 function change() {
