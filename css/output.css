@@ -583,10 +583,6 @@ video {
   z-index: 0;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -623,6 +619,11 @@ video {
   max-width: none;
 }
 
+.rotate-90 {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .scale-x-flip {
   --tw-scale-x: -1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -657,10 +658,6 @@ video {
   justify-content: flex-start;
 }
 
-.justify-end {
-  justify-content: flex-end;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -679,10 +676,6 @@ video {
   padding-left: 1.25rem;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -698,6 +691,11 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-black {
@@ -744,11 +742,6 @@ video {
 @media (min-width: 640px) {
   .mobileHor\:justify-end {
     justify-content: flex-end;
-  }
-
-  .mobileHor\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .mobileHor\:text-xl {
